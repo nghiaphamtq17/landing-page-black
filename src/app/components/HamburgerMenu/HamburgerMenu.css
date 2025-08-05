@@ -1,0 +1,135 @@
+/* Vollbild-Menü */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Setze die Breite auf 100% des Viewports */
+  height: 100vh; /* Setze die Höhe auf 100% des Viewports */
+  background-color: black;
+  z-index: 100;
+  display: flex; /* Nutze Flexbox für die Zentrierung */
+  align-items: center; /* Zentriert vertikal */
+  justify-content: center; /* Zentriert horizontal */
+  pointer-events: all;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transform: translateX(100%); /* Menü startet außerhalb des Bildschirms */
+}
+
+.menu nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu nav ul li {
+  margin: 20px 0;
+}
+
+.menu nav ul li a {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 1;
+  transition: color 0.3s ease;
+}
+
+.menu nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Hamburger-Icon */
+.hamburger-menu-container {
+  position: relative;
+  z-index: 1100;
+}
+
+/* Standardmäßig ausgeblendet */
+.hamburger-icon {
+  display: none;
+}
+
+/* Hamburger-Overlay */
+.hamburger-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mobile und Tablet: Zeige Menü und Hamburger-Icon */
+@media screen and (max-width: 768px) {
+  /* Menü sichtbar machen */
+  .menu {
+    display: flex; /* Menü anzeigen */
+  }
+
+  /* Hamburger-Icon anzeigen */
+  .hamburger-icon {
+    display: block; /* Hamburger-Icon sichtbar machen */
+    position: fixed;
+    top: 23px;
+    right: 22px;
+    cursor: pointer;
+    z-index: 1101;
+    margin-top: -12px;
+  }
+
+  /* Hamburger-Icon Linien */
+  .hamburger-line {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s ease;
+  }
+
+  .hamburger-line.active:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .hamburger-line.active:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-line.active:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  /* Hamburger-Overlay sichtbar */
+  .hamburger-overlay {
+    opacity: 1; /* Sichtbar machen */
+    pointer-events: all; /* Klickbar machen */
+  }
+
+  /* Navbar Links ausblenden */
+  .nav-links {
+    display: none; /* Verstecken der Links */
+  }
+}
+
+/* Bei kleinen Bildschirmgrößen (max. 768px) Navigationselemente verstecken */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Verstecken der Links */
+  }
+
+  /* Hamburger-Menü anzeigen */
+  .hamburger-icon {
+    display: block; /* Nur auf kleinen Bildschirmen anzeigen */
+  }
+
+  /* Wenn das Menü geöffnet ist (z.B. über JavaScript) */
+  .navbar.open .nav-links {
+    display: flex; /* Links wieder anzeigen */
+  }
+}

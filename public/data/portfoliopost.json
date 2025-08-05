@@ -1,0 +1,93 @@
+[
+    {
+      "slug": "oni-girl-coding1",
+      "title": "Erstes Projekt",
+      "category": "Coding",
+      "abovetitle": "Best-CSS-Tricks",
+      "heroImage": "/assets/img/LandingBG/OniBoy1.webp",
+      "holographicCard": "/assets/img/LandingBG/OniGirl3.jpg",
+      "backgroundImage": "/assets/img/LandingBG/OniGirl3.jpg",
+      "projectDetails": {
+        "theme": "Coding",
+        "inspiration": "Behance",
+        "tags": "HTML/CSS, JS",
+        "date": "31.05.2024",
+        "techStack": "React, TailwindCSS, GSAP",
+        "challenges": "Building an interactive gallery with Fancybox",
+        "solutions": "Implemented Fancybox with optimized lazy loading",
+        "liveDemoLink": "https://your-live-demo-link.com",
+        "codeRepositoryLink": "https://github.com/your-repo"
+      },
+      "projectTexts": {
+        "heroParagraph": "I created this website with great dedication...",
+        "description": "This website is a showcase of my passion for web development... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur error earum, quod maxime perspiciatis repudiandae nihil vero explicabo officia architecto itaque doloremque ipsam alias porro distinctio doloribus. Dicta, earum dolorem."
+      },
+      "galleryImages": [
+        "New1.png",
+        "New2.png",
+        "New3.png",
+        "New4.png",
+        "New5.png",
+        "New6.png",
+        "New7.png"
+      ]
+    },
+    {
+      "slug": "oni-girl-coding2",
+      "title": "My First Project2",
+      "category": "Coding",
+      "year": 2024,
+      "heroImage": "/assets/img/LandingBG/OniBoy1.webp",
+      "holographicCard": "/assets/img/LandingBG/OniBoy4.webp",
+      "projectDetails": {
+        "theme": "Coding",
+        "inspiration": "Behance",
+        "tags": "HTML/CSS, JS",
+        "date": "31.05.2024",
+        "techStack": "React, TailwindCSS, GSAP",
+        "challenges": "Building an interactive gallery with Fancybox",
+        "solutions": "Implemented Fancybox with optimized lazy loading",
+        "liveDemoLink": "https://your-live-demo-link.com",
+        "codeRepositoryLink": "https://github.com/your-repo"
+      },
+      "projectTexts": {
+        "heroParagraph": "I created this website with great dedication...",
+        "description": "This website is a showcase of my passion for web development... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur error earum, quod maxime perspiciatis repudiandae nihil vero explicabo officia architecto itaque doloremque ipsam alias porro distinctio doloribus. Dicta, earum dolorem."
+      },
+      "galleryImages": [
+        "New1.png",
+        "New2.png",
+        "New3.png",
+        "New4.png",
+        "New5.png",
+        "New6.png",
+        "New7.png"
+      ]
+    },
+    
+    {
+    "_comment": "ignoriere diesen teil ist nur ein kommentar, dieser abschnitt zeigt wie die blog beiträge sein sollen!",
+  "slug": "projekt-name",
+  "title": "Projekt Titel",
+  "abovetitle": "Web Development",
+  "backgroundImage": "/path/to/image.jpg",
+  "projectDetails": {
+    "theme": "Coding",
+    "inspiration": "Behance", 
+    "tags": "HTML/CSS, JS",
+    "date": "31.05.2024",
+    "techStack": "React, TailwindCSS, GSAP",
+    "challenges": "Building an interactive gallery with Fancybox",
+    "solutions": "Implemented Fancybox with optimized lazy loading",
+    "demoUrl": "https://example.com",
+    "githubUrl": "https://github.com/username/repo"
+  },
+  "projectTexts": {
+    "heroParagraph": "Hero text...",
+    "description": "About the project..."
+  },
+  "galleryImages": ["image1.jpg", "image2.jpg"]
+}
+]
+
+

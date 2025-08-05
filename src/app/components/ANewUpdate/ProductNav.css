@@ -1,0 +1,169 @@
+
+
+.scroll-container:active {
+  cursor: grabbing; /* Zeigt aktiven Drag-Modus an */
+}
+
+
+.scroll-container {
+  user-select: none; /* Verhindert die Textauswahl */
+  -webkit-user-select: none; /* Für Safari */
+  -ms-user-select: none; /* Für ältere IE-Versionen */
+  cursor: grab; /* Zeigt den Drag-Modus an */
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
+	padding: 35vh 10px;
+	max-width: 1200px;
+	margin: 0 auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+  scroll-snap-stop: always;
+  scroll-behavior: smooth;
+}
+
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.scroll-item {
+  height: calc(100vh / 6); /* 3 Produkte pro Seite */
+  padding: 0 10%; /* Padding optimieren */
+  display: flex;
+  scroll-snap-align: center;
+  align-items: center;
+  opacity: 0.4;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  scroll-snap-align: center; /* Element zentrieren */
+  box-sizing: border-box;
+}
+
+.scroll-item radiant active {
+padding-top: 25px;
+}
+
+.scroll-item.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+
+.index {
+  font-family: 'CommandOverride', monospace;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.scroll-item.active .index {
+  color: white;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-title {
+  font-family: "CommandOverride";
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.562);
+  margin: 0;
+  position: relative;
+}
+
+.scroll-item.active .product-title {
+  color: white;
+}
+
+.category {
+  font-family: "CommandOverride";
+  font-size: 0.9rem;
+  color: #f007075e;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.scroll-item.active .category {
+  color: #f00707;
+}
+
+.title-deco {
+	position: absolute;
+	left: -30px;
+	top: 50%;
+	width: 15px;
+	height: 2px;
+	background: #f00707;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.scroll-item.active .title-deco {
+  opacity: 1;
+}
+
+.scroll-indicator {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+}
+
+.scroll-indicator[data-visible="true"] {
+  opacity: 1;
+}
+
+.bottom {
+  bottom: 20px;
+}
+
+
+@keyframes pulse {
+  0%, 100% { 
+    transform: rotate(135deg) translate(0,0);
+    opacity: 0.8;
+  }
+  50% { 
+    transform: rotate(135deg) translate(3px, -3px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .product-title {
+    font-size: 2.5rem;
+  }
+  
+  .index {
+    font-size: 1.2rem;
+  }
+  
+  .scroll-item {
+    height: 70vh; /* Größere Höhe für mobile Geräte */
+    min-height: 70vh;
+    padding: 0 5%;
+  }
+}

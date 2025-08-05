@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "slug": "clean-code-nextjs-react-css",
+    "title": "1The Importance of Clean Code in Next.js, React, and CSS",
+    "excerpt": "Writing clean and maintainable code is essential for scalable applications. Learn best practices for Next.js, React, and CSS.",
+    "image": "/assets/img/blog/blog1.webp",
+    "tags": ["Development"],
+    "author": "Gylan Salih",
+    "date": "February 2, 2025",
+    "readTime": "6 min"
+  },
+  {
+    "id": 2,
+    "slug": "best-website-designs",
+    "title": "The Best Website Designs: What Makes Them Stand Out",
+    "excerpt": "An exploration of the best web designs and the principles behind them...",
+    "image": "/assets/img/blog/blog3.webp",
+    "tags": ["Design"],
+    "author": "Gylan Salih",
+    "date": "January 11, 2025",
+    "readTime": "5 min"
+  },
+  {
+    "id": 3,
+    "slug": "Neues-Test-Projekt-blog-post",
+    "title": "Neues-Test-Projekt-blog-post",
+    "excerpt": "An exploration of the best web designs and the principles behind them...",
+    "image": "/assets/img/blog/blog3.webp",
+    "tags": ["Design"],
+    "author": "Gylan Salih",
+    "date": "January 11, 2025",
+    "readTime": "5 min"
+  },
+  {
+    "id": 4,
+    "slug": "projekt4",
+    "title": "projekt4",
+    "excerpt": "An exploration of the best web designs and the principles behind them...",
+    "image": "/assets/img/blog/blog2.webp",
+    "tags": ["Design"],
+    "author": "Gylan Salih",
+    "date": "January 11, 2025",
+    "readTime": "5 min"
+  },
+  {
+    "id": 5,
+    "slug": "projekt5",
+    "title": "projekt5",
+    "excerpt": "An exploration of the best web designs and the principles behind them...",
+    "image": "/assets/img/blog/blog2.webp",
+    "tags": ["Design"],
+    "author": "Gylan Salih",
+    "date": "March 11, 2025",
+    "readTime": "5 min"
+  }
+]

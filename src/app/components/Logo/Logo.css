@@ -1,0 +1,8 @@
+/* Navbar Logo */
+.logo img {
+    width: 64px;
+    max-width: 64px;
+    height: auto;
+    object-fit: contain;
+  }
+  

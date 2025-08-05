@@ -1,0 +1,217 @@
+
+
+/* -----------------------------------------------------------
+ Global Styles
+---------------------------------------------------------- */
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f1f1f1;
+  --foreground: #0a0a0a;
+  --dark-mode: #f1f1f1;
+  --light-mode: #0a0a0a;
+}
+
+/* h1 {
+  color: var(--dark-mode);
+} */
+
+/* Box-Sizing für alle Elemente */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scrollbar-width: thin; /* Für Firefox: schmaler Scrollbalken */
+  scrollbar-color: #333 #222; /* Farbe für den Thumb und Track in Firefox */
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: hsla(218, 9%, 59%, .1) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 10px;
+  border: 2px solid #111;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+/* Globale Schriftarten und Layout-Defaults */
+body {
+  font-family: "RedHat";
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  color: #0a0a0a;
+  cursor: none;
+  min-width: 320px; /* Minimale Breite für den Body */
+  min-height: 480px; /* Minimale Höhe für den Body */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #0a0a0a; /* Hintergrund für Dark Mode */
+  color: #f1f1f1; /* Textfarbe für Dark Mode */
+}
+
+/* Hauptinhalt */
+.main-content {
+  background-color: inherit; /* Verwendet die Hintergrundfarbe von body */
+  min-height: 50vh; /* Mindestens 50% der Bildschirmhöhe */
+  flex-grow: 1; /* Stellt sicher, dass der Inhalt den verfügbaren Platz ausfüllt */
+}
+
+/* -----------------------------------------------------------
+Links
+---------------------------------------------------------- */
+
+a {
+  color: #646cff; /* Standardfarbe für Links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #535bf2; /* Hover-Farbe für Links */
+}
+
+/* -----------------------------------------------------------
+ Title Überschriften
+---------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-family: "RedHat";
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+  font-family: "BlenderProMedium";
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #F5F5F5;
+  padding-bottom: 0.5rem;
+  font-family: "RedHat", sans-serif;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+}
+
+h4 {
+  font-size: 1.75em;
+  margin-bottom: 0.2em;
+}
+
+h5 {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+}
+
+h6 {
+  font-size: 1.25em;
+  margin-bottom: 0.2em;
+}
+
+/* -----------------------------------------------------------
+Absätze und Text
+---------------------------------------------------------- */
+
+p {
+  text-align: center;
+  font-weight: 400;
+  font-family: "RedHat";
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+small {
+  font-size: 18px;
+}
+
+
+
+
+/* -----------------------------------------------------------
+Listen
+---------------------------------------------------------- */
+
+ul, ol {
+  margin: 0;
+  list-style-position: inside;
+}
+
+li {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+
+
+/* -----------------------------------------------------------
+ Bilder
+---------------------------------------------------------- */
+
+
+/* -----------------------------------------------------------
+ Audi/Video
+---------------------------------------------------------- */
+
+audio, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -----------------------------------------------------------
+ Global Reset
+---------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

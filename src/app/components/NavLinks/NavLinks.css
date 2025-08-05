@@ -1,0 +1,226 @@
+/* General Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 14px 0;
+  background-color: transparent;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Elemente gleichmäßig verteilen */
+  align-items: center; /* Vertikale Ausrichtung der Elemente */
+  box-sizing: border-box; /* Sicherstellen, dass padding/border mit der Größe berücksichtigt werden */
+}
+
+/* Navbar Container Styles */
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Links, Logo und Toggle verteilen */
+  align-items: center;
+  max-width: 1920px; /* Maximale Breite */
+  margin: 0 auto; /* Zentriert den Container */
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box; /* Padding wird berücksichtigt */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Bei kleinen Bildschirmgrößen (max. 768px) Navigationselemente verstecken */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Verstecken der Links */
+  }
+
+  .nav-links dark-mode  {
+    display: none; /* Verstecken der Links */
+  }
+
+  /* Hamburger-Menü anzeigen */
+  .hamburger-icon {
+    display: block; /* Nur auf kleinen Bildschirmen anzeigen */
+  }
+
+  /* Wenn das Menü geöffnet ist (z.B. über JavaScript) */
+  .navbar.open .nav-links {
+    display: flex; /* Links wieder anzeigen */
+  }
+}
+
+/* Navigation Links List */
+.nav-links ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 480px) {
+  .nav-links ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+  }
+}
+
+
+/* Navigation Links Items */
+.nav-links li {
+  margin: 0 15px;
+}
+
+/* Standard Link Colors (Light Mode) */
+.nav-links li a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 0;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease; /* Nur Hintergrundfarbe ändern */
+  color: #000000; /* Grüne Schrift für Links im Light Mode */
+  font-family: "RedHat", sans-serif; /* Gleiche Schriftart für beide Modi */
+}
+
+/* Dark Mode Link Colors */
+.dark-mode .nav-links li a {
+  color: #ffffff; /* Weiße Schrift für Links im Dark Mode */
+}
+
+/* Hover Effects on Navbar Links */
+.nav-links li a:hover {
+  background-color: #ff0000;
+}
+
+/* Dark Mode Hover Effects */
+.navbar.dark-mode .nav-links li a:hover {
+  background-color: #555;  /* Dunkelgrauer Hover-Effekt im Dunkelmodus */
+}
+
+/* Dark Mode Styles */
+.navbar.dark-mode {
+  background-color: #000000; /* Dunkler Hintergrund */
+}
+
+.navbar.dark-mode .darkmode-toggle button {
+  color: #fff; /* Weiße Schrift für den Button */
+}
+
+.navbar.dark-mode .darkmode-toggle button:hover {
+  background-color: #555;  /* Dunkelgrauer Hover-Effekt im Dunkelmodus */
+}
+/* General Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 14px 0;
+  background-color: transparent;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertikale Ausrichtung für alle Elemente */
+  box-sizing: border-box;
+}
+
+/* Navbar Container Styles */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Zentriert alle Elemente vertikal */
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Links auch vertikal ausrichten */
+  flex-grow: 1;
+  flex-shrink: 0;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark Mode Toggle */
+.darkmode-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  z-index: 1001;
+  /* Um sicherzustellen, dass der Toggle nicht die Links überlappt */
+}
+
+/* Navigation Links Items */
+.nav-links li {
+  margin: 0 15px;
+}
+
+/* Standard Link Colors (Light Mode) */
+.nav-links li a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 0;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease;
+  color: #000000;
+  font-family: "RedHat", sans-serif;
+}
+
+/* Dark Mode Link Colors */
+.dark-mode .nav-links li a {
+  color: #ffffff;
+}
+
+/* Hover Effects on Navbar Links */
+.nav-links li a:hover {
+  background-color: #ff0000;
+}
+
+/* Dark Mode Hover Effects */
+.navbar.dark-mode .nav-links li a:hover {
+  background-color: #555;
+}
+
+/* Dark Mode Styles */
+.navbar.dark-mode {
+  background-color: #000000;
+}
+
+.navbar.dark-mode .darkmode-toggle button {
+  color: #fff;
+}
+
+.navbar.dark-mode .darkmode-toggle button:hover {
+  background-color: #555;
+}

@@ -1,0 +1,87 @@
+
+/* General Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 20px;
+  width: 100%;
+  padding: 14px 0;
+  background-color: transparent;
+  z-index: 1000;
+  opacity: 1;
+  border-radius: .8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  /* Transition Styles */
+  transition: 
+    background-color 0.1s ease, /* Switch BG Color Navbar transition */
+    border-radius 0.3s ease, 
+    box-shadow 0.3s ease;
+}
+
+
+/* Mobile-Version */
+@media screen and (max-width: 768px) {
+  .navbar {
+    left: 0; 
+    right: 0;
+    top: 0;
+    width: 100%; 
+    border-radius: 0;
+  }
+}
+
+/* Sticky Navbar Styles (when scrolled) */
+.navbar.sticky {
+  background-color: rgb(255, 255, 255);  /* White background when sticky */
+  border-radius: .8rem;
+}
+
+/* Sticky Dark Mode Navbar */
+.navbar.sticky.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+  transition: padding 0.3s ease;  /* Smooth padding for responsiveness */
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  gap: 16px;
+}
+
+.navbar-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #003366;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  border-bottom: 2px solid #003366;
+}
+
+/* Navbar Button */
+.navbar-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e0f0ff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+

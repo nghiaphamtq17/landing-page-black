@@ -1,0 +1,117 @@
+
+/* Sound Settings */
+
+/* Sound Icon Container */
+.sound-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .sound-wave {
+    width: 24px;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: -88px;
+  }
+  
+  /* Animierter Zustand */
+  .sound-wave.active .bar {
+    animation: sound 3s ease-in-out infinite;
+  }
+  
+  /* Sound Bars Styling */
+  .bar {
+    display: block;
+    width: 1px; 
+    margin-right: 0; 
+    height: 10px; 
+    background: var(--light-mode);
+    transform-origin: center;
+    transition: background-color 0.3s, color 0.3s;
+    transition: height 0.3s ease-in-out;
+    gap: 0.3rem;
+    opacity: 0.9;
+  }
+  
+  .dark-mode .bar {
+    background: var(--dark-mode);
+  } 
+  
+  /* Keyframes for Sound Animation */
+  @keyframes sound {
+    0%, 100% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(2);
+    }
+  }
+  
+  /* Bar-Specific Animation Durations */
+  .bar:nth-child(1) {
+    animation-duration: 1.3s;
+    animation-delay: 0s;
+  }
+  .bar:nth-child(2) {
+    animation-duration: 1.2s;
+    animation-delay: 0.1s;
+  }
+  .bar:nth-child(3) {
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+  }
+  .bar:nth-child(4) {
+    animation-duration: 1.6s;
+    animation-delay: 0.3s;
+  }
+  
+  /* Hover Effect: When Audio Button is Hovered */
+  .sound-icon:hover .bar {
+    animation-play-state: paused; 
+    transform: scaleY(1.2);
+  }
+  
+  /* Active State Styling */
+  .sound-icon.active {
+    filter: brightness(1.2); 
+  }
+  
+  /* Disabled State Styling */
+  .sound-icon.disabled .sound-wave .bar {
+    opacity: 0.3;
+    transform: scaleY(0.5); 
+    animation: pulse 1.5s ease-in-out infinite; 
+  }
+  
+  /* Keyframes for Disabled Pulse Animation */
+  @keyframes pulse {
+    0%, 100% {
+      transform: scaleY(0.5);
+      opacity: 0.3;
+    }
+    50% {
+      transform: scaleY(0.6);
+      opacity: 0.4;
+    }
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 600px) {
+    .sound-wave {
+      width: 26px;
+      height: 25px;
+      right: 119px;
+      position: absolute;
+      top: 11px;
+    }
+    .bar {
+      width: 0.8px;
+      margin-right: 2px;
+    }
+  }
+  

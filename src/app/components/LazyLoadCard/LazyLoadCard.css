@@ -1,0 +1,32 @@
+/* Add a basic style for the load more button */
+
+/* Button style for smooth loading */
+.load-more-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background-color: #0056b3;
+}
+
+  
+  /* Placeholder styling */
+  .placeholder-card {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -1,0 +1,39 @@
+[
+    {
+      "slug": "oni-girl-coding1",
+      "imgSrc": "/assets/img/LandingBG/OniGirl4.jpg",
+      "category": "Coding",
+      "rarity": "ShineBlitz"
+    },
+    {
+      "slug": "oni-girl-coding2",
+      "imgSrc": "/assets/img/LandingBG/OniGirl8.jpg",
+      "category": "Design",
+      "rarity": "ShineBlitz2"
+    },
+    {
+      "slug": "oni-girl-coding3",
+      "imgSrc": "/assets/img/LandingBG/OniBoy4.webp",
+      "category": "Marketing",
+      "rarity": "ShineBlitz2"
+    },
+    {
+      "slug": "oni-girl-coding4",
+      "imgSrc": "/assets/img/LandingBG/OniGirl6.webp",
+      "category": "Coding",
+      "rarity": "ShineBlitz2"
+    },
+    {
+      "slug": "oni-girl-coding5",
+      "imgSrc": "/assets/img/LandingBG/OniGirl6.webp",
+      "category": "Coding",
+      "rarity": "ShineBlitz2"
+    },
+    {
+      "slug": "oni-girl-coding6",
+      "imgSrc": "/assets/img/LandingBG/OniGirl4.jpg",
+      "category": "Coding",
+      "rarity": "ShineBlitz"
+    }
+  ]
+  

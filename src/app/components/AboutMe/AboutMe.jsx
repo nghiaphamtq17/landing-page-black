@@ -62,7 +62,7 @@ const AboutMe = () => {
               <ul>
                 <li className="profile-item">
                   <span className="profile-label">Name</span>
-                  <span className="profile-content">Gylan Salih</span>
+                  <span className="profile-content">Nghia Pham</span>
                 </li>
                 <li className="profile-item">
                   <span className="profile-label">Profession</span>
@@ -112,7 +112,7 @@ const AboutMe = () => {
           <div className="about-me-content-column">
             <h5>More Than Code</h5>
             <p className="about-me-intro">
-              Hello! You can call me Gylan Salih. I&#39;ve always had a passion
+              Hello! You can call me Nghia Pham. I&#39;ve always had a passion
               for development, but due to life circumstances, I never had the
               chance to fully dive into it. Now, I finally have the security and
               opportunity to dedicate myself entirely to something I&#39;ve

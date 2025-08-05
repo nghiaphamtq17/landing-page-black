@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-left">
             <span className="footer-copyright">
-              © Gylan Salih
+              © Nghia Pham
             </span>
             <span className="footer-legal">
               <a href="https://github.com/GylanSalih/NextJS-Portify/tree/main" target="_blank" rel="noopener noreferrer">

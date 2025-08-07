@@ -64,7 +64,6 @@ export const useBlogStats = (slug) => {
     try {
       console.log('Incrementing views for slug:', slug);
       
-      // Verwende direkte Upsert-Methode statt RPC für bessere Zuverlässigkeit
       const { data: currentData, error: selectError } = await supabase
         .from('blog_stats')
         .select('views, likes')

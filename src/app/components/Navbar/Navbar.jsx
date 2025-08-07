@@ -83,6 +83,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
         ${isSticky ? 'sticky' : ''} 
         ${isSticky && isDarkMode ? 'dark-mode' : ''} 
         ${isSticky && !isDarkMode ? 'light-mode' : ''}
+        ${isDarkMode ? 'bg-white' : 'bg-black'}
       `}
     >
       <div className="navbar-container">

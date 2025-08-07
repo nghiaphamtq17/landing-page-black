@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import './skill.css';
+import Image from 'next/image';
 
 const skillsData = {
   coding: [
@@ -65,14 +66,14 @@ const Skills = () => {
               {/* Füge diesen Div hinzu */}
               <div className="gradient-border"></div>
               
-              <img
+              <Image
                 src={skill.icon}
                 alt={skill.title}
                 className="skill-icon"
                 style={{
                   transform: hoveredIndex === index 
-                    ? 'scale(1.15) rotateZ(0deg)' 
-                    : 'scale(1) rotateZ(0deg)'
+                    ? "scale(1.15) rotateZ(0deg)" 
+                    : "scale(1) rotateZ(0deg)"
                 }}
               />
               <p className="skill-title">{skill.title}</p>
